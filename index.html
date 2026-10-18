@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Redesign acadêmico do Arngren: um catálogo organizado de tecnologia, mobilidade, robótica e gadgets." />
+    <title>ARNGREN — Tecnologia para explorar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header class="site-header" id="inicio">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Arngren, voltar ao início">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-name">ARNGREN</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+          <a href="#inicio" class="nav-link is-active">Início</a>
+          <a href="#produtos" class="nav-link">Produtos</a>
+          <a href="#categorias" class="nav-link">Categorias</a>
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </nav>
+        <form class="header-search" id="global-search-form" role="search">
+          <label class="sr-only" for="global-search">Buscar produtos</label>
+          <input id="global-search" name="q" type="search" placeholder="Buscar produtos" autocomplete="off" />
+          <button class="icon-button" type="submit" aria-label="Buscar produtos">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 5 5"></path></svg>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> desde o inesperado · até o extraordinário</p>
+            <h1 id="hero-title">Curiosidade<br />em modo <em>infinito.</em></h1>
+            <p class="hero-description">Robôs que surpreendem. Mobilidade que inspira. Objetos que despertam o seu próximo interesse. Explore o universo Arngren.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#produtos">Explorar produtos <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#categorias">Ver categorias <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="hero-meta" aria-label="Características do catálogo">
+              <span><strong>18</strong> produtos selecionados</span><span class="meta-separator" aria-hidden="true"></span><span>6 universos para descobrir</span>
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="hero-product-main">
+              <div class="hero-product-label"><span>OBJETO EM FOCO / 001</span><span>ROBÓTICA</span></div>
+              <img src="assets/products/mip.jpg" alt="Robô WowWee MiP branco e preto, com duas rodas" fetchpriority="high" width="1600" height="1600" />
+              <div class="hero-product-caption"><div><small>WOWWEE</small><strong>Conheça o MiP.</strong></div><a href="#produtos" aria-label="Explorar MiP e os outros produtos">↗</a></div>
+            </div>
+            <div class="hero-product-small"><img src="assets/products/robot-arm.jpg" alt="Braço robótico Edge amarelo" width="450" height="450" /><span>MONTE. EXPLORE. DESCUBRA.</span></div>
+            <span class="hero-edition">THE ARNGREN COLLECTION — VOL. 01</span>
+          </div>
+        </div>
+        <div class="hero-line" aria-hidden="true"></div>
+      </section>
+
+      <section class="category-section section-space" id="categorias" aria-labelledby="categories-title">
+        <div class="container">
+          <div class="section-heading split-heading"><div><p class="eyebrow">explore por interesse</p><h2 id="categories-title">Qual é a sua próxima descoberta?</h2></div><p class="section-intro">Do primeiro experimento ao próximo passeio. Escolha por onde começar.</p></div>
+          <div class="category-grid">
+            <button class="category-card category-card-dark" type="button" data-category="Eletrônicos e Gadgets"><span class="category-index">01</span><span class="category-icon" aria-hidden="true"><img src="assets/products/r2d2.jpg" alt="" loading="lazy" /></span><span class="category-name">Eletrônicos<br />e Gadgets</span><span class="category-arrow" aria-hidden="true">↗</span></button>
+            <button class="category-card category-card-teal" type="button" data-category="Veículos Elétricos"><span class="category-index">02</span><span class="category-icon" aria-hidden="true"><img src="assets/products/scooter.jpg" alt="" loading="lazy" /></span><span class="category-name">Veículos<br />Elétricos</span><span class="category-arrow" aria-hidden="true">↗</span></button>
+            <button class="category-card category-card-light" type="button" data-category="Robótica"><span class="category-index">03</span><span class="category-icon" aria-hidden="true"><img src="assets/products/mip.jpg" alt="" loading="lazy" /></span><span class="category-name">Robótica</span><span class="category-arrow" aria-hidden="true">↗</span></button>
+            <button class="category-card category-card-light" type="button" data-category="Drones e Controle Remoto"><span class="category-index">04</span><span class="category-icon" aria-hidden="true"><img src="assets/products/drone.jpg" alt="" loading="lazy" /></span><span class="category-name">Drones e<br />Controle Remoto</span><span class="category-arrow" aria-hidden="true">↗</span></button>
+            <button class="category-card category-card-dark" type="button" data-category="Bicicletas e Mobilidade"><span class="category-index">05</span><span class="category-icon" aria-hidden="true"><img src="assets/products/ecoride.jpg" alt="" loading="lazy" /></span><span class="category-name">Bicicletas<br />e Mobilidade</span><span class="category-arrow" aria-hidden="true">↗</span></button>
+            <button class="category-card category-card-teal" type="button" data-category="Acessórios e Utilidades"><span class="category-index">06</span><span class="category-icon" aria-hidden="true"><img src="assets/products/flashlight.jpg" alt="" loading="lazy" /></span><span class="category-name">Acessórios<br />e Utilidades</span><span class="category-arrow" aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-section section-space" id="produtos" aria-labelledby="catalog-title">
+        <div class="container">
+          <div class="section-heading catalog-heading"><div><p class="eyebrow">a seleção arngren</p><h2 id="catalog-title">Produtos para explorar.</h2></div><p class="catalog-note">Uma seleção do catálogo original.<br /><span>Valores publicados em coroas norueguesas.</span></p></div>
+          <div class="catalog-toolbar" aria-label="Ferramentas de descoberta">
+            <div class="catalog-search-wrap"><label for="catalog-search">O que você está procurando?</label><div class="catalog-search-input"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 5 5"></path></svg><input id="catalog-search" type="search" placeholder="Ex.: drone, robô, bicicleta..." autocomplete="off" /></div></div>
+            <div class="select-wrap"><label for="category-filter">Categoria</label><select id="category-filter"><option value="all">Todas as categorias</option><option value="Eletrônicos e Gadgets">Eletrônicos e Gadgets</option><option value="Veículos Elétricos">Veículos Elétricos</option><option value="Robótica">Robótica</option><option value="Drones e Controle Remoto">Drones e Controle Remoto</option><option value="Bicicletas e Mobilidade">Bicicletas e Mobilidade</option><option value="Acessórios e Utilidades">Acessórios e Utilidades</option></select></div>
+            <div class="select-wrap sort-wrap"><label for="sort-filter">Ordenar por</label><select id="sort-filter"><option value="featured">Mais relevantes</option><option value="price-asc">Menor preço</option><option value="price-desc">Maior preço</option><option value="name">Nome A–Z</option></select></div>
+            <button class="button button-ghost clear-button" id="clear-filters" type="button">Limpar filtros</button>
+          </div>
+          <div class="results-bar"><p id="result-count" aria-live="polite">18 produtos encontrados</p><span class="results-rule" aria-hidden="true"></span><p class="results-hint">Selecione um item para ver mais detalhes.</p></div>
+          <div class="product-grid" id="product-grid"></div><noscript><p>Ative o JavaScript para visualizar os 18 produtos deste catálogo.</p></noscript>
+          <div class="empty-state" id="empty-state" hidden><span class="empty-icon" aria-hidden="true">⌕</span><h3>Nenhum produto encontrado.</h3><p>Tente outro termo ou remova alguns filtros para continuar explorando.</p><button class="button button-primary" type="button" id="empty-clear">Limpar filtros</button></div>
+        </div>
+      </section>
+
+      <section class="about-section section-space" id="sobre" aria-labelledby="about-title"><div class="container about-layout"><div class="about-statement"><p class="eyebrow">por trás do redesign</p><h2 id="about-title">Menos ruído.<br /><span>Mais descoberta.</span></h2></div><div class="about-copy"><p>O Arngren original é conhecido por reunir uma variedade incomum de produtos: eletrônicos, veículos elétricos, robôs, brinquedos e equipamentos para hobby. Esta seleção preserva essa curiosidade em uma experiência mais clara, organizada e fácil de explorar.</p><p>Os produtos foram selecionados no catálogo Arngren. As fotografias apresentam os mesmos modelos ou linhas e têm suas fontes indicadas nos detalhes de cada item. Um projeto acadêmico, sem vendas ou confirmação de estoque.</p><a class="text-link" href="#contato">Explore o catálogo <span aria-hidden="true">→</span></a></div></div></section>
+
+      <section class="contact-section section-space" id="contato" aria-labelledby="contact-title"><div class="container contact-card"><div><p class="eyebrow">a curiosidade continua</p><h2 id="contact-title">Muito mais<br /><em>fora do comum.</em></h2></div><div class="contact-action"><p>Conheça o catálogo que inspirou este projeto e descubra ainda mais eletrônicos, robôs e ideias inesperadas.</p><a class="button button-light" href="https://www.arngren.net/" target="_blank" rel="noopener noreferrer">Visitar Arngren original <span aria-hidden="true">↗</span></a></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-top"><a class="brand brand-footer" href="#inicio" aria-label="Arngren, voltar ao início"><span class="brand-mark" aria-hidden="true">A</span><span class="brand-name">ARNGREN</span></a><p>Um catálogo mais claro para ideias que não param quietas.</p><a class="back-top" href="#inicio">Voltar ao topo <span aria-hidden="true">↑</span></a></div><div class="container footer-bottom"><p>Redesign acadêmico não oficial · sem vendas · 2026</p><div class="footer-links"><a href="#produtos">Produtos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></div></div></footer>
+
+    <dialog class="product-dialog" id="product-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button class="dialog-close" id="dialog-close" type="button" aria-label="Fechar detalhes do produto">×</button><div class="dialog-image-wrap"><img id="dialog-image" src="" alt="" /></div><div class="dialog-copy"><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><p class="dialog-price" id="dialog-price"></p><p id="dialog-description"></p><div class="dialog-detail" id="dialog-detail"></div><a class="button button-primary source-button" id="dialog-source" href="https://www.arngren.net/" target="_blank" rel="noopener noreferrer">Ver no Arngren ↗</a><p class="photo-credit">Fotografia: <a id="dialog-photo-source" href="https://www.arngren.net/" target="_blank" rel="noopener noreferrer">Fonte</a></p><p class="demo-note"><span aria-hidden="true">i</span> Projeto acadêmico. O preço é o publicado no Arngren, sem confirmação de vigência. Fotos podem variar em cor, versão e acessórios.</p></div></div></dialog>
+  </body>
+</html>
